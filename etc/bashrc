@@ -1,0 +1,70 @@
+#----------------------------------*-sh-*--------------------------------------
+# =========                 |
+# \\      /  F ield         | LundFMFoam: An OpenFOAM package developed by 
+#  \\    /   O peration     | Division of Fluid Mechanics, Lund University
+#   \\  /    A nd           | Website:  http://www.fm.energy.lth.se/
+#    \\/     M anipulation  | 
+#------------------------------------------------------------------------------
+# License
+#     This file is part of OpenFOAM.
+#
+#     OpenFOAM is free software: you can redistribute it and/or modify it
+#     under the terms of the GNU General Public License as published by
+#     the Free Software Foundation, either version 3 of the License, or
+#     (at your option) any later version.
+#
+#     OpenFOAM is distributed in the hope that it will be useful, but WITHOUT
+#     ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+#     FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+#     for more details.
+#
+#     You should have received a copy of the GNU General Public License
+#     along with OpenFOAM.  If not, see <http://www.gnu.org/licenses/>.
+#
+# File
+#     etc/bashrc
+#
+# Description
+#     'LU' is a abbreviation of LundFMFoam 
+#     Startup file for loading LundFMFoam
+#     Sourced from ~/.profile or ~/.bashrc
+#
+#------------------------------------------------------------------------------
+
+export LU_PROJECT=LundFMFoam
+export LU_PROJECT_VERSION=7
+
+################################################################################
+# USER EDITABLE PART: Changes made here may be lost with the next upgrade
+#
+# LU_PROJECT_INST_DIR is the location of the LundFMFoam installation which
+# defaults to the directory containing this file if sourced by a bash shell.
+#
+# We suggest to put the LundFMFoam folder into
+# $HOME/OpenFOAM/$LU_PROJECT-$LU_PROJECT_VERSION
+#
+export LU_PROJECT_INST_DIR=$(cd $(dirname ${BASH_SOURCE:-$0})/../.. && pwd -P)
+#export LU_PROJECT_INST_DIR=$HOME/OpenFOAM/$LU_PROJECT-$LU_PROJECT_VERSION
+#
+# END OF (NORMAL) USER EDITABLE PART
+################################################################################
+
+# Location of LundFMFoam project files
+# ~~~~~~~~~~~~~~~~~~~~~~
+export LU_PROJECT_DIR=$LU_PROJECT_INST_DIR/$LU_PROJECT
+export LU_SRC=$LU_PROJECT_DIR/src
+export LU_APP=$LU_PROJECT_DIR/app
+export LU_SOLVERS=$LU_PROJECT_DIR/app/solvers
+export LU_UTILITIES=$LU_PROJECT_DIR/app/utilities
+export LU_TUTORIALS=$LU_PROJECT_DIR/tut
+
+# The compiled binary library, solver are saved
+# in $FOAM_USER_LIBBIN and $FOAM_USER_APPBIN
+# Source OpenFOAM for initialization
+# ~~~~~~~~~~~~~~~~~~~~~~
+#source $FOAM_BASH
+
+# Source LundFMFoam aliases
+source $LU_PROJECT_DIR/etc/aliases
+
+#------------------------------------------------------------------------------

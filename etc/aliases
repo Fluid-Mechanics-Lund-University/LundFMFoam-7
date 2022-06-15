@@ -1,0 +1,43 @@
+#----------------------------------*-sh-*--------------------------------------
+# =========                 |
+# \\      /  F ield         | LundFMFoam: An OpenFOAM package developed by 
+#  \\    /   O peration     | Division of Fluid Mechanics, Lund University
+#   \\  /    A nd           | Website:  http://www.fm.energy.lth.se/
+#    \\/     M anipulation  | 
+#------------------------------------------------------------------------------
+# License
+#     This file is part of OpenFOAM.
+#
+#     OpenFOAM is free software: you can redistribute it and/or modify it
+#     under the terms of the GNU General Public License as published by
+#     the Free Software Foundation, either version 3 of the License, or
+#     (at your option) any later version.
+#
+#     OpenFOAM is distributed in the hope that it will be useful, but WITHOUT
+#     ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+#     FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+#     for more details.
+#
+#     You should have received a copy of the GNU General Public License
+#     along with OpenFOAM.  If not, see <http://www.gnu.org/licenses/>.
+#
+# File
+#     etc/config.sh/aliases
+#
+# Description
+#     'LU' is a abbreviation of LundFMFoam 
+#     Aliases for working with LundFMFoam
+#     Sourced from $LU_PROJECT_DIR/etc/aliases and/or ~/.bashrc
+#
+#------------------------------------------------------------------------------
+
+# Change directory aliases
+# ~~~~~~~~~~~~~~~~~~~~~~~~
+alias foamLU='cd $LU_PROJECT_DIR'
+alias srcLU='cd $LU_SRC'
+alias appLU='cd $LU_APP'
+alias solLU='cd $LU_SOLVERS'
+alias utilLU='cd $LU_UTILITIES'
+alias tutLU='cd $LU_TUTORIALS'
+
+#------------------------------------------------------------------------------

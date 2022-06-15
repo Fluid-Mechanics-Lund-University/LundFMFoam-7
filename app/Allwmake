@@ -1,0 +1,26 @@
+#!/bin/sh
+cd ${0%/*} || exit 1    # Run from this directory
+
+# Parse arguments for library compilation
+. $WM_PROJECT_DIR/wmake/scripts/AllwmakeParseArguments
+
+# Perform various checks
+wmakeCheckPwd "$LU_PROJECT_DIR/app" || {
+    echo "Allwmake error: Current directory is not \$LU_PROJECT_DIR/app"
+    echo "    The environment variables are inconsistent with the installation."
+    echo "    Check the LundFMFoam entries in your dot-files and source them."
+    echo "    The entries is suggested to be at $HOME/OpenFOAM/LundFMFoam."
+    exit 1
+}
+
+[ -n "$FOAM_USER_LIBBIN" ] || {
+    echo "Allwmake error: FOAM_USER_LIBBIN not set"
+    echo "The library .so files will be written into $FOAM_USER_LIBBIN"
+    exit 1
+}
+
+# wmake all of the solvers and utilities
+wmake -all $targetType solvers
+wmake -all $targetType utilities
+
+#------------------------------------------------------------------------------
