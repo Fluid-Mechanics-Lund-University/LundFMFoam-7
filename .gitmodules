@@ -1,0 +1,9 @@
+[submodule "src/thermophysicalModels/chemistryModel/QSSAchemistrySolver"]
+	path = src/thermophysicalModels/chemistryModel/QSSAchemistrySolver
+	url = git@github.com:Fluid-Mechanics-Lund-University/QSSAchemistrySolver
+[submodule "src/radiationModels/sootModels"]
+	path = src/radiationModels/sootModels
+	url = git@github.com:Fluid-Mechanics-Lund-University/sootModels.git
+[submodule "src/functionObjects/conditionalAverage"]
+	path = src/functionObjects/conditionalAverage
+	url = git@github.com:Fluid-Mechanics-Lund-University/conditionalAverage.git
