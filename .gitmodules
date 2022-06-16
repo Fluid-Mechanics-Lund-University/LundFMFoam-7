@@ -55,3 +55,6 @@
 [submodule "app/utilities/foam2Columns"]
 	path = app/utilities/foam2Columns
 	url = git@github.com:Fluid-Mechanics-Lund-University/foam2Columns.git
+[submodule "app/solvers/reactingCanteraFoam"]
+	path = app/solvers/reactingCanteraFoam
+	url = git@github.com:Fluid-Mechanics-Lund-University/reactingCanteraFoam.git
