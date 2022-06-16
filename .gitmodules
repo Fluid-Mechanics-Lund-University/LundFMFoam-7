@@ -91,3 +91,9 @@
 [submodule "src/combustionModels/LLPaSR"]
 	path = src/combustionModels/LLPaSR
 	url = git@github.com:Fluid-Mechanics-Lund-University/LLPaSRcombustionModel.git
+[submodule "app/solvers/combSprayFoam"]
+	path = app/solvers/combSprayFoam
+	url = git@github.com:Fluid-Mechanics-Lund-University/combSprayFoam.git
+[submodule "app/solvers/ESFDySprayAFoam"]
+	path = app/solvers/ESFDySprayAFoam
+	url = git@github.com:Fluid-Mechanics-Lund-University/ESFDySprayAFoam.git
