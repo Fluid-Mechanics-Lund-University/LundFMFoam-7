@@ -10,3 +10,6 @@
 [submodule "tut/chemicalMechanisms"]
 	path = tut/chemicalMechanisms
 	url = git@github.com:Fluid-Mechanics-Lund-University/chemicalMechanisms.git
+[submodule "app/solvers/scalarTransportESFFoam"]
+	path = app/solvers/scalarTransportESFFoam
+	url = git@github.com:Fluid-Mechanics-Lund-University/scalarTransportESFFoam.git
