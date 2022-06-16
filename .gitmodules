@@ -43,3 +43,12 @@
 [submodule "app/solvers/reactingDNS"]
 	path = app/solvers/reactingDNS
 	url = git@github.com:Fluid-Mechanics-Lund-University/reactingDNS_OpenFOAM.git
+[submodule "src/functionObjects/sampledPlaneAverage"]
+	path = src/functionObjects/sampledPlaneAverage
+	url = git@github.com:Fluid-Mechanics-Lund-University/sampledPlaneAverage.git
+[submodule "app/utilities/CRPWA"]
+	path = app/utilities/CRPWA
+	url = git@github.com:Fluid-Mechanics-Lund-University/CRPWA.git
+[submodule "app/utilities/1DFlameSin2Foam"]
+	path = app/utilities/1DFlameSin2Foam
+	url = git@github.com:Fluid-Mechanics-Lund-University/1DFlameSin2Foam.git
