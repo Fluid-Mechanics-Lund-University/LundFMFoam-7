@@ -7,6 +7,6 @@
 [submodule "src/functionObjects/conditionalAverage"]
 	path = src/functionObjects/conditionalAverage
 	url = git@github.com:Fluid-Mechanics-Lund-University/conditionalAverage.git
-[submodule "src/chemicalMechanisms"]
-	path = src/chemicalMechanisms
+[submodule "tut/chemicalMechanisms"]
+	path = tut/chemicalMechanisms
 	url = git@github.com:Fluid-Mechanics-Lund-University/chemicalMechanisms.git
