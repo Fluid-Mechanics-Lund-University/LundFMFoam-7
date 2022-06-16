@@ -58,3 +58,9 @@
 [submodule "app/solvers/reactingCanteraFoam"]
 	path = app/solvers/reactingCanteraFoam
 	url = git@github.com:Fluid-Mechanics-Lund-University/reactingCanteraFoam.git
+[submodule "app/solvers/ZYsprayFoam"]
+	path = app/solvers/ZYsprayFoam
+	url = git@github.com:Fluid-Mechanics-Lund-University/ZYsprayFoam.git
+[submodule "src/thermophysicalModels/chemistryModel/CanteraChemistryModel"]
+	path = src/thermophysicalModels/chemistryModel/CanteraChemistryModel
+	url = git@github.com:Fluid-Mechanics-Lund-University/CanteraChemistryModel.git
