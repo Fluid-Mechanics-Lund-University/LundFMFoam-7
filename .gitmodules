@@ -22,3 +22,21 @@
 [submodule "tut/3DsprayH"]
 	path = tut/3DsprayH
 	url = git@github.com:Fluid-Mechanics-Lund-University/3DsprayH.git
+[submodule "app/utilities/Internal2volField"]
+	path = app/utilities/Internal2volField
+	url = git@github.com:Fluid-Mechanics-Lund-University/Internal2volField.git
+[submodule "src/functionObjects/cloudInfo"]
+	path = src/functionObjects/cloudInfo
+	url = git@github.com:Fluid-Mechanics-Lund-University/cloudInfo.git
+[submodule "src/functionObjects/minMaxLength"]
+	path = src/functionObjects/minMaxLength
+	url = git@github.com:Fluid-Mechanics-Lund-University/minMaxLength.git
+[submodule "src/functionObjects/mixtureFraction"]
+	path = src/functionObjects/mixtureFraction
+	url = git@github.com:Fluid-Mechanics-Lund-University/mixtureFraction.git
+[submodule "app/utilities/colorfulParticleTracks"]
+	path = app/utilities/colorfulParticleTracks
+	url = git@github.com:Fluid-Mechanics-Lund-University/colorfulParticleTracks.git
+[submodule "tut/pitzDailyPremixedFlame"]
+	path = tut/pitzDailyPremixedFlame
+	url = git@github.com:Fluid-Mechanics-Lund-University/pitzDailyPremixedFlame.git
