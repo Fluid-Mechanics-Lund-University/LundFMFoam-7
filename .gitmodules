@@ -97,3 +97,6 @@
 [submodule "app/solvers/ESFDySprayAFoam"]
 	path = app/solvers/ESFDySprayAFoam
 	url = git@github.com:Fluid-Mechanics-Lund-University/ESFDySprayAFoam.git
+[submodule "app/solvers/multiRegionSprayFoam"]
+	path = app/solvers/multiRegionSprayFoam
+	url = git@github.com:Fluid-Mechanics-Lund-University/multiRegionSprayFoam.git
