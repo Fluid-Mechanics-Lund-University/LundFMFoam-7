@@ -52,3 +52,6 @@
 [submodule "app/utilities/1DFlameSin2Foam"]
 	path = app/utilities/1DFlameSin2Foam
 	url = git@github.com:Fluid-Mechanics-Lund-University/1DFlameSin2Foam.git
+[submodule "app/utilities/foam2Columns"]
+	path = app/utilities/foam2Columns
+	url = git@github.com:Fluid-Mechanics-Lund-University/foam2Columns.git
