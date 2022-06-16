@@ -13,3 +13,6 @@
 [submodule "app/solvers/scalarTransportESFFoam"]
 	path = app/solvers/scalarTransportESFFoam
 	url = git@github.com:Fluid-Mechanics-Lund-University/scalarTransportESFFoam.git
+[submodule "src/thermophysicalModels/chemistryModel/PLOGArrheniusReactions"]
+	path = src/thermophysicalModels/chemistryModel/PLOGArrheniusReactions
+	url = git@github.com:Fluid-Mechanics-Lund-University/PLOGArrheniusReactions.git
