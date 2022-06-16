@@ -76,3 +76,6 @@
 [submodule "tut/chemicalMechanisms"]
 	path = tut/chemicalMechanisms
 	url = git@github.com:Fluid-Mechanics-Lund-University/chemicalMechanisms.git
+[submodule "src/boundaryConditions"]
+	path = src/boundaryConditions
+	url = git@github.com:Fluid-Mechanics-Lund-University/boundaryConditions.git
