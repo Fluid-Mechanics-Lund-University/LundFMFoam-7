@@ -64,3 +64,6 @@
 [submodule "src/thermophysicalModels/chemistryModel/CanteraChemistryModel"]
 	path = src/thermophysicalModels/chemistryModel/CanteraChemistryModel
 	url = git@github.com:Fluid-Mechanics-Lund-University/CanteraChemistryModel.git
+[submodule "app/utilities/CEMAX"]
+	path = app/utilities/CEMAX
+	url = git@github.com:Fluid-Mechanics-Lund-University/CEMAX.git
