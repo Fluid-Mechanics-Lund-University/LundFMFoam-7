@@ -51,7 +51,7 @@ export LU_PROJECT_INST_DIR=$(cd $(dirname ${BASH_SOURCE:-$0})/../.. && pwd -P)
 
 # Location of LundFMFoam project files
 # ~~~~~~~~~~~~~~~~~~~~~~
-export LU_PROJECT_DIR=$LU_PROJECT_INST_DIR/$LU_PROJECT
+export LU_PROJECT_DIR=$LU_PROJECT_INST_DIR/$LU_PROJECT-$LU_PROJECT_VERSION
 export LU_SRC=$LU_PROJECT_DIR/src
 export LU_APP=$LU_PROJECT_DIR/app
 export LU_SOLVERS=$LU_PROJECT_DIR/app/solvers
