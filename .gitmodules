@@ -73,8 +73,8 @@
 [submodule "app/utilities/ZYfoamListTimes"]
 	path = app/utilities/ZYfoamListTimes
 	url = git@github.com:Fluid-Mechanics-Lund-University/ZYfoamListTimes.git
-[submodule "tut/chemicalMechanisms"]
-	path = tut/chemicalMechanisms
+[submodule "dat/chemicalMechanisms"]
+	path = dat/chemicalMechanisms
 	url = git@github.com:Fluid-Mechanics-Lund-University/chemicalMechanisms.git
 [submodule "src/boundaryConditions"]
 	path = src/boundaryConditions
