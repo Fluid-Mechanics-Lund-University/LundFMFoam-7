@@ -23,5 +23,4 @@ wmakeCheckPwd "$LU_PROJECT_DIR/src" || {
 #wmake $targetType LundFMFoamSRCfolder
 thermophysicalModels/Allwmake $targetType $*
 wmake $targetType combustionModels
-wmake $targetType radiationModels/sootModels
 #------------------------------------------------------------------------------
