@@ -7,9 +7,6 @@
 [submodule "src/functionObjects/conditionalAverage"]
 	path = src/functionObjects/conditionalAverage
 	url = git@github.com:Fluid-Mechanics-Lund-University/conditionalAverage.git
-[submodule "tut/chemicalMechanisms"]
-	path = tut/chemicalMechanisms
-	url = git@github.com:Fluid-Mechanics-Lund-University/chemicalMechanisms.git
 [submodule "app/solvers/scalarTransportESFFoam"]
 	path = app/solvers/scalarTransportESFFoam
 	url = git@github.com:Fluid-Mechanics-Lund-University/scalarTransportESFFoam.git
@@ -73,3 +70,6 @@
 [submodule "src/TurbulenceModels/dynamicSmagorinsky"]
 	path = src/TurbulenceModels/dynamicSmagorinsky
 	url = git@github.com:Fluid-Mechanics-Lund-University/dynamicSmagorinsky.git
+[submodule "app/utilities/ZYfoamListTimes"]
+	path = app/utilities/ZYfoamListTimes
+	url = git@github.com:Fluid-Mechanics-Lund-University/ZYfoamListTimes.git
