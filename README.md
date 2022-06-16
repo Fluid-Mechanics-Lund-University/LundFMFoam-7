@@ -2,7 +2,7 @@
 # LundFMFoam
 > `LundFMFoam` is an OpenFOAM tool package, including chemistry coordinate mapping (CCM) approach, Eulerian stochastic field (ESF) based transport probability density function (PDF) method.
 
-The code is developed by [Bai's group](http://www.fm.energy.lth.se/english/) in Division of Fluid Mechanics, Lund University.
+The code is developed by [Bai's group](http://www.fm.energy.lth.se/english/) in Division of Fluid Mechanics, Lund University. All of the codes and cases in this repository are based on the `OpenFOAM-7`. The `LundFMFoam-7` repository is a collection of many self-developed solvers, libraries, and postProcess tools. Some of the solvers (`reactingDNS`, `multiRegionSprayFoam`, `reactingCanteraFoam`, `ZYsprayFoam` ...) libraries (`boundaryConditions`, `QSSAchemistrySolver`, `CanteraChemistryModel`, `dynamicSmagorinsky`, ...) postProcess tools (`conditionalAverage`, `foam2Columns`, `CEMAX`,  `colorfulParticleTracks`, ...) and database (`chemicalMechanisms`) are open access, while others, such as `CCM` and `ESF`, are linked to private repositories and not publicated yet. If you would like to access the private repositories, please write us an email.
 
 Here are the instructions for using `LundFMFoam`. The instructions are devided into two parts:
 - If you are a user, only want to use the existing code, see [Guidelines for users](#guidelines-for-users).
@@ -14,28 +14,39 @@ Here are the instructions for using `LundFMFoam`. The instructions are devided i
 source $HOME/OpenFOAM/OpenFOAM-7/etc/bashrc
 ```
 
-2. Download the `LundFMFoam` repository and source `bashrc` file
+2. Download the `LundFMFoam-7` repository and source `bashrc` file
 ```shell
 cd $HOME/OpenFOAM
-git clone git@github.com:Fluid-Mechanics-Lund-University/LundFMFoam.git
-cd LundFMFoam/etc
+git clone git@github.com:Fluid-Mechanics-Lund-University/LundFMFoam-7.git
+cd LundFMFoam-7/etc
 source bashrc
 ```
 
 3. Once sourcing the `bashrc` file, you can compile the library or/and solver following the instructions
-
-- compiling the libraries
+To compile the build-in codes, you can use the `Allwmake` script. For example, you can compile the libraries
 ```shell
 srcLU
 wclean all
 ./Allwmake
 ```
-
-- compiling the app
+and applications
 ```shell
 appLU
 wclean all
 ./Allwmake
+```
+
+To compile the submodule codes, you need to download the specific submodule. For example, if you would like to compile the `CanteraChemistryModel` library, you can use the following commands
+```shell
+git submodule update --init src/thermophysicalModels/chemistryModel/CanteraChemistryModel/
+srcLU
+wmake thermophysicalModels/chemistryModel/CanteraChemistryModel/
+```
+and if you would also like to compile the `reactingCanteraFoam` solver
+```shell
+git submodule update --init app/solvers/reactingCanteraFoam/
+appLU
+wmake solvers/reactingCanteraFoam/
 ```
 
 The compiled binary files, such as solvers and `.so` libraries, are written into `$FOAM_USER_APPBIN` and `$FOAM_USER_LIBBIN`.
