@@ -67,3 +67,6 @@
 [submodule "app/utilities/CEMAX"]
 	path = app/utilities/CEMAX
 	url = git@github.com:Fluid-Mechanics-Lund-University/CEMAX.git
+[submodule "src/thermophysicalModels/chemistryModel/pyJacChemistryModel"]
+	path = src/thermophysicalModels/chemistryModel/pyJacChemistryModel
+	url = git@github.com:Fluid-Mechanics-Lund-University/pyJacChemistryModel.git
