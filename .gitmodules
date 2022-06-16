@@ -16,3 +16,9 @@
 [submodule "src/thermophysicalModels/chemistryModel/PLOGArrheniusReactions"]
 	path = src/thermophysicalModels/chemistryModel/PLOGArrheniusReactions
 	url = git@github.com:Fluid-Mechanics-Lund-University/PLOGArrheniusReactions.git
+[submodule "tut/2DsprayH"]
+	path = tut/2DsprayH
+	url = git@github.com:Fluid-Mechanics-Lund-University/2DsprayH.git
+[submodule "tut/3DsprayH"]
+	path = tut/3DsprayH
+	url = git@github.com:Fluid-Mechanics-Lund-University/3DsprayH.git
