@@ -40,3 +40,6 @@
 [submodule "tut/pitzDailyPremixedFlame"]
 	path = tut/pitzDailyPremixedFlame
 	url = git@github.com:Fluid-Mechanics-Lund-University/pitzDailyPremixedFlame.git
+[submodule "app/solvers/reactingDNS"]
+	path = app/solvers/reactingDNS
+	url = git@github.com:Fluid-Mechanics-Lund-University/reactingDNS_OpenFOAM.git
