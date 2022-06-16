@@ -79,3 +79,15 @@
 [submodule "src/boundaryConditions"]
 	path = src/boundaryConditions
 	url = git@github.com:Fluid-Mechanics-Lund-University/boundaryConditions.git
+[submodule "src/thermophysicalModels/chemistryModel/CCMchemistryModel"]
+	path = src/thermophysicalModels/chemistryModel/CCMchemistryModel
+	url = git@github.com:Fluid-Mechanics-Lund-University/CCMChemistryModel_OpenFOAMV7.git
+[submodule "app/solvers/ESFFoam"]
+	path = app/solvers/ESFFoam
+	url = git@github.com:Fluid-Mechanics-Lund-University/ESFFoam.git
+[submodule "src/combustionModels/ESF"]
+	path = src/combustionModels/ESF
+	url = git@github.com:Fluid-Mechanics-Lund-University/ESFcombustionModel.git
+[submodule "src/combustionModels/LLPaSR"]
+	path = src/combustionModels/LLPaSR
+	url = git@github.com:Fluid-Mechanics-Lund-University/LLPaSRcombustionModel.git
